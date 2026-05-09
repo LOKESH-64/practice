@@ -89,9 +89,79 @@
 
 
 #12. Reverse number
-n = int(input("enter a number :"))
-rev = 0
-while n>0:
-    digit = n%10
-    rev = re
+# n = int(input("enter a number :"))
+# rev = 0
+# while n>0:
+#     digit = n%10
+#     rev = re
 
+
+# 13.Find the sum of digits
+
+# n= int(input("enter a number :"))
+# t=0
+# while n>0:
+#     s=n%10
+#     t+=s
+#     n=n//10
+# print(t)
+
+
+# 14.Check if a number is palindromeExample: 121 → Yes
+
+# n= int(input("number:"))
+# o = n 
+# rev = 0
+# while n>0:
+#     rev =rev*10+(n%10)
+#     n//=10
+# if o==rev:
+#     print("palindrome")
+# else:
+#     print("not a palindrome")
+
+# 15.Find the largest digit in a number
+# n= int(input("number:"))
+# large=0
+# while n>0:
+#     d=n%10
+#     if d>large:
+#         large=d
+#     n//=10
+# print(large)
+
+# 16.Stop when user enters 0
+# while True:
+#     n= int(input())
+#     if n==0:
+#         break
+
+#17.skip the multiples of 5 
+# i = 1 
+# while i<=20:
+#     if i% 5 ==0 :
+#         i+=1
+#         continue 
+#     print(i)
+#     i+=1
+
+# 18. First number divisible by 3 and 7
+# i = 1 
+# while i<=100:
+#     if i%3==0 and i%7==0:
+#         print(i)
+#         break
+#     i+=1
+
+#19.guessing game 
+# n = 7 
+# while True:
+#     g=int(input())
+#     if g==n:
+#         print("correct")
+#         break
+#     else:
+#         print("incorrect")
+
+
+#20.prime number 
