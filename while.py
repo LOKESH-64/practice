@@ -163,5 +163,3 @@
 #     else:
 #         print("incorrect")
 
-
-#20.prime number 
