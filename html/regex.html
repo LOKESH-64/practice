@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="return validate();" action="https://www.google.com">
+      <input type="text" placeholder="enter name" name="name" id="name" />
+      <br />
+      <input type="text" placeholder="enter email" name="email" id="email" />
+      <br />
+      <div>
+        <input
+          type="text"
+          placeholder="enter password"
+          name="password"
+          id="password"
+        />
+        <p id="password-error"></p>
+      </div>
+      <button>submit</button>
+    </form>
+    <script>
+      function validate() {
+        var name = document.getElementById("name").value;
+        var nameCheck = /^[a-zA-Z][a-zA-Z ]+$/;
+        var email = document.getElementById("email").value;
+        var emailCheck = /^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-z]{2,3}$/;
+        var password = document.getElementById("password").value;
+        var passwordCheck = /^(?=.*[a-z])(?=,*[A-Z])[?=.*[0-9](?=.*[\W]).{4,}$/;
+        if (name == "") {
+          alert("check your name");
+          return false;
+        }
+        if (!name.match(nameCheck)) {
+          alert("Name must carry alphabets");
+          return false;
+        }
+        if (!email.match(emailCheck)) {
+          alert("email invalid");
+          return false;
+        }
+        if (!password.match(passwordCheck)) {
+          document.getElementById("password-error").innerHTML =
+            "password must carry uppercase,lowercase,digit,specialcharacter and minimun 4 needed";
+          document.getElementById("password-error").style.color = "red";
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>
