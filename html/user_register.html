@@ -1,0 +1,52 @@
+
+
+{% extends "welcome.html" %}
+
+{% block title %}User registration{% endblock %}
+
+{% block content %}
+
+<div style="display:flex; justify-content:center; align-items:center; height:80vh;">
+
+    <div style="
+        background-color:white;
+        padding:30px;
+        border-radius:10px;
+        width:350px;
+        box-shadow:0 0 10px rgba(0,0,0,0.2);
+        text-align:center;
+    ">
+
+        <h2>Register</h2>
+
+        
+        <p style="color:red;">{{ note }}</p>
+        
+
+        <form action="user_register" method="post">
+
+            <input type="text" name="username"  placeholder="Username"  required  value="{{ username }}"
+                   style="width:90%; padding:8px; margin:10px;"><br>
+
+            <input type="password" name="password" placeholder="Password"  required value="{{ password }}"
+                   style="width:90%; padding:8px; margin:10px;"><br>
+
+            <input type="text" name="profile_name" placeholder="Profile Name"  required   value="{{ profile_name }}"
+                   style="width:90%; padding:8px; margin:10px;"><br>
+
+            <input type="email" name="email" placeholder="Email"    required  value="{{ email }}"
+                   style="width:90%; padding:8px; margin:10px;"><br>
+
+            <button type="submit"
+                    style="background-color:green; color:white; padding:8px 15px; border:none; border-radius:5px;">
+                Register
+            </button>
+
+        </form>
+        
+
+    </div>
+
+</div>
+
+{% endblock %}
