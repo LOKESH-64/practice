@@ -1,0 +1,19 @@
+{% extends "welcome.html" %}
+{% block title %}admin dashboard{% endblock %}
+
+{% block content %}
+<form action="{{url_for('add_product')}}" method = "post" encrypt="multipart/form-data">
+    <h3>fill the product details </h3>
+    <label for="name">name of the product</label><br>
+    <input type="text" name ="name" required><br><br>
+    <label for="price">price of the product</label><br>
+    <input type="number" name ="price" required><br><br>
+    <label for="quantity">quantity of the product</label><br>
+    <input type="number" name = "quantity" reqiured><br><br>
+    <label for="category">category of the product</label><br>
+    <input type="name" name = "category" reqiured><br><br>
+    <label for="detalis">details of the product</label><br>
+    <input type="text" name = "details" reqiured><br><br>
+
+
+</form>
