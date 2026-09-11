@@ -73,17 +73,21 @@
 #Next, the second char of s1 and the second-to-last char of s2, and so on. 
 #Any left-over chars go at the end of the result.
 
-s1 = "Abc" 
-s2 = "Xyz"
-r = ""
-if len(s1)>len(s2):
-    l = s1
-else:
-    l =s2
-s2 = s2[::-1]
-for i  in  range(l) :
-    if i < len(s1):
-        r +=s1[i]
-    else:
-        r +=s2[i]
-print(r)
+# s1 = "Abc" 
+# s2 = "Xyz"
+# r = ""
+# if len(s1)>len(s2):
+#     l = s1
+# else:
+#     l =s2
+# s2 = s2[::-1]
+# for i  in  range(l) :
+#     if i < len(s1):
+#         r +=s1[i]
+#     else:
+#         r +=s2[i]
+# print(r)
+
+
+
+asdf
