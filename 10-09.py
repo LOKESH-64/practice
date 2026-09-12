@@ -90,4 +90,10 @@
 
 
 
-asdf
+# l = [1,2,3,4,5,6]
+# r = []
+# for i in range(len(l)-1,-1,-1) :
+#     r.append(l[i])
+# print(r)
+    
+
